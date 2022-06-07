@@ -6,7 +6,8 @@ public class ObjectHit : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Bumped in to the wall!");
+        //Debug.Log("Bumped in to the wall!");
         GetComponent<MeshRenderer>().material.color = Color.green;
+        
     }
 }
