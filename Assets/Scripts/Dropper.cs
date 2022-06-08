@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour
 {
+    [SerializeField] int timeToWait = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,9 @@ public class Dropper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Game has started " + Time.time + " seconds ago.");
+        if (Time.time > timeToWait)
+        {
+            Debug.Log("3 seconds has elaps.");
+        }
     }
 }
